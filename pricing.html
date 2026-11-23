@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tonight — Pricing</title>
+<meta name="description" content="Tonight pricing: free for everyone until January 1, 2027, then $9.99/month. Cancel anytime.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<!-- HeyCatch analytics -->
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.5';
+  analytics.init({
+    projectKey: 'hck_pk_ybGymikceowfQj5RfGJslMIWLqFb9GK0',
+    site: 'landing',
+    requestBatching: false,
+    install: {
+      framework: 'web',
+      agent: 'other',
+    },
+  });
+</script>
+<link rel="canonical" href="https://tonightapp.ca/pricing.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tonightapp.ca/pricing.html">
+<meta property="og:title" content="Tonight — Pricing">
+<meta property="og:description" content="Free for everyone until January 1, 2027, then $9.99/month. Cancel anytime.">
+<meta property="og:image" content="https://tonightapp.ca/tonight-ad-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tonight — Pricing">
+<meta name="twitter:description" content="Free for everyone until January 1, 2027, then $9.99/month. Cancel anytime.">
+<meta name="twitter:image" content="https://tonightapp.ca/tonight-ad-poster.jpg">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-soft: #141414;
+    --card: #1a1a1a;
+    --text: #ffffff;
+    --muted: #a3a3a3;
+    --body: #d4d4d4;
+    --red: #e63946;
+    --red-hover: #f04a57;
+    --border: #262626;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Nav */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1080px; margin: 0 auto; padding: 16px 24px;
+  }
+  .wordmark { font-size: 1.5rem; font-weight: 900; letter-spacing: 0.08em; }
+  .wordmark span { color: var(--red); }
+  .badge-18 {
+    font-size: 0.8rem; font-weight: 700;
+    border: 1.5px solid var(--red); color: var(--red);
+    border-radius: 999px; padding: 3px 10px;
+  }
+
+  /* Document */
+  .doc { padding: 64px 0 80px; }
+  .doc-wrap { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    color: var(--red); font-weight: 800; letter-spacing: 0.25em;
+    font-size: 0.85rem; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .doc h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .lede { font-size: 1.25rem; color: var(--muted); margin-bottom: 28px; }
+  .doc h2 {
+    font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em;
+    margin: 36px 0 12px;
+  }
+  .doc p { color: var(--body); margin-bottom: 14px; }
+  .doc ul { color: var(--body); margin: 0 0 14px 22px; }
+  .doc li { margin-bottom: 8px; }
+  .doc strong { color: #fff; }
+
+  /* Price box */
+  .price-box {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 32px 28px; margin-bottom: 8px;
+  }
+  .price-tier {
+    color: var(--red); font-weight: 800; letter-spacing: 0.2em;
+    text-transform: uppercase; font-size: 0.9rem;
+  }
+  .price-amount { font-size: 3rem; font-weight: 900; color: var(--text); }
+  .price-amount span { font-size: 1.25rem; color: var(--muted); font-weight: 700; }
+  .price-note { color: var(--muted); }
+  .price-box h2 { margin-top: 24px; }
+
+  .cta-row { margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .btn {
+    display: inline-block; background: var(--red); color: #fff;
+    font-weight: 800; font-size: 1.05rem;
+    padding: 15px 34px; border-radius: 999px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .btn:hover { background: var(--red-hover); transform: translateY(-1px); }
+  .fineprint { margin-top: 20px; color: var(--muted); font-size: 0.95rem; }
+
+  /* Links to the other documents */
+  .doc-nav {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    margin-top: 48px; padding-top: 28px;
+    border-top: 1px solid var(--border);
+  }
+  .doc-nav a {
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 10px 20px; font-weight: 700; font-size: 0.95rem;
+  }
+  .doc-nav a:hover { border-color: var(--red); }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0; color: var(--muted); font-size: 0.9rem;
+  }
+  footer .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 10px;
+  }
+  footer .wordmark { font-size: 1rem; }
+  footer .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  footer .foot-links a:hover { color: var(--text); }
+  footer .founder { width: 100%; }
+
+  @media (max-width: 760px) {
+    .doc { padding: 48px 0 64px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="https://tonightapp.ca/" class="wordmark">TONIGHT<span>.</span></a>
+    <span class="badge-18">18+</span>
+  </nav>
+</header>
+
+<main>
+  <section class="doc">
+    <div class="doc-wrap">
+      <p class="eyebrow">Pricing</p>
+      <h1>Free until January 1, 2027.</h1>
+      <p class="lede">Then $9.99/month. Cancel anytime.</p>
+
+      <div class="price-box">
+        <p class="price-tier">Tonight</p>
+        <p class="price-amount">$9.99<span>/month</span></p>
+        <p class="price-note">after January 1, 2027 — free for everyone until then.</p>
+        <h2>What you get</h2>
+        <ul>
+          <li>Swipe everyone who's out tonight near you</li>
+          <li>Make same-night plans — pick a bar, set a time</li>
+          <li>Chat opens the moment you match</li>
+          <li>One photo, one line — no long profiles</li>
+        </ul>
+      </div>
+
+      <h2>What the free period includes</h2>
+      <p>Everything. Full access until January 1, 2027 — every swipe, every plan, every chat. No trial clock, no card required to start.</p>
+
+      <h2>When the first charge lands</h2>
+      <p>January 1, 2027 is the first charge. Cancel before then and you pay nothing.</p>
+
+      <h2>Cancel anytime</h2>
+      <p>Cancel in the app, or email <a href="mailto:support@tonightapp.ca">support@tonightapp.ca</a>. No lock-in, no cancellation fee.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://one-night-1.emergent.host">Create account — meet tonight</a>
+      </div>
+      <p class="fineprint">Free until January 1, 2027, then $9.99/month. Cancel anytime. &middot; 18+ only</p>
+
+      <div class="doc-nav">
+        <a href="https://tonightapp.ca/">Back to Tonight</a>
+        <a href="about.html">About</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="safety.html">Safety &amp; Community Guidelines</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="https://tonightapp.ca/" class="wordmark">TONIGHT<span>.</span></a>
+    <span class="foot-links">
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="safety.html">Safety</a>
+      <a href="mailto:support@tonightapp.ca">Contact</a>
+      <a href="https://www.instagram.com/timhenrycole">Instagram</a>
+    </span>
+    <span class="founder">Built by Timothy Henry Cole, Duncan, B.C.</span>
+    <span>&copy; 2026 Tonight &middot; 18+ only</span>
+  </div>
+</footer>
+
+</body>
+</html>

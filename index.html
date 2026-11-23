@@ -3,22 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tonight — No strings. Just tonight.</title>
-<meta name="description" content="Tonight is the same-night meetup app. Swipe, match, make plans. 18+ only. Free until January 1, 2027.">
+<title>Tonight — the same-night dating app for Canada</title>
+<meta name="description" content="Tonight is the same-night dating app for Canada. Swipe, match, and meet at a bar near you tonight — starting in Victoria, B.C.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <!-- HeyCatch analytics -->
-  <script type="module">
-    import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.5';
-    analytics.init({
-      projectKey: 'hck_pk_ybGymikceowfQj5RfGJslMIWLqFb9GK0',
-      site: 'landing',
-      requestBatching: false,
-      install: {
-        framework: 'web',
-        agent: 'other',
-      },
-    });
-  </script>
+<!-- HeyCatch analytics -->
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.5';
+  analytics.init({
+    projectKey: 'hck_pk_ybGymikceowfQj5RfGJslMIWLqFb9GK0',
+    site: 'landing',
+    requestBatching: false,
+    install: {
+      framework: 'web',
+      agent: 'other',
+    },
+  });
+</script>
+<link rel="canonical" href="https://tonightapp.ca/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tonightapp.ca/">
+<meta property="og:title" content="Tonight — the same-night dating app for Canada">
+<meta property="og:description" content="Swipe, match, and meet at a bar near you tonight. Free for everyone until January 1, 2027.">
+<meta property="og:image" content="https://tonightapp.ca/tonight-ad-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tonight — the same-night dating app for Canada">
+<meta name="twitter:description" content="Swipe, match, and meet at a bar near you tonight. Free for everyone until January 1, 2027.">
+<meta name="twitter:image" content="https://tonightapp.ca/tonight-ad-poster.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Tonight",
+      "url": "https://tonightapp.ca/",
+      "email": "support@tonightapp.ca",
+      "founder": {
+        "@type": "Person",
+        "name": "Timothy Henry Cole"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Tonight",
+      "description": "The same-night dating app — swipe, match, and meet at a bar near you tonight.",
+      "url": "https://tonightapp.ca/",
+      "offers": {
+        "@type": "Offer",
+        "price": "9.99",
+        "priceCurrency": "CAD",
+        "description": "Free for everyone until January 1, 2027, then $9.99/month. Cancel anytime."
+      }
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --bg: #0a0a0a;
@@ -112,7 +151,7 @@
     letter-spacing: -0.01em; margin-bottom: 44px;
   }
   .cards {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
   }
   .card {
     background: var(--card); border: 1px solid var(--border);
@@ -124,6 +163,56 @@
   }
   .card h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
   .card p { color: var(--muted); }
+  .how-line {
+    text-align: center; margin-top: 32px;
+    font-size: 1.2rem; font-weight: 800;
+  }
+
+  /* See the app (screenshot strip) */
+  .shots { padding: 0 0 90px; text-align: center; }
+  .shots h2 {
+    font-size: 2rem; font-weight: 900;
+    letter-spacing: -0.01em; margin-bottom: 12px;
+  }
+  .shots .lede { color: var(--muted); margin-bottom: 36px; }
+  .frames {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    max-width: 900px; margin: 0 auto;
+  }
+  .frame {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 24px; aspect-ratio: 9 / 16; max-height: 420px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; gap: 10px;
+  }
+  .frame .shot-num {
+    color: var(--red); font-weight: 900; font-size: 0.9rem;
+    letter-spacing: 0.2em;
+  }
+  .frame h3 { font-size: 1.1rem; font-weight: 800; }
+  .frame p { color: var(--muted); font-size: 0.95rem; }
+
+  /* Safety */
+  .safety { padding: 70px 0 90px; border-top: 1px solid var(--border); }
+  .safety h2 {
+    text-align: center; font-size: 2rem; font-weight: 900;
+    letter-spacing: -0.01em; margin-bottom: 12px;
+  }
+  .safety .lede { text-align: center; color: var(--muted); margin-bottom: 36px; }
+  .safety .cards { grid-template-columns: repeat(3, 1fr); }
+  .safety .more { text-align: center; margin-top: 28px; }
+  .safety .more a { color: var(--red); font-weight: 700; }
+
+  /* First stories */
+  .stories { padding: 70px 0 90px; border-top: 1px solid var(--border); text-align: center; }
+  .stories h2 {
+    font-size: 2rem; font-weight: 900;
+    letter-spacing: -0.01em; margin-bottom: 12px;
+  }
+  .stories .outcome {
+    font-size: 1.25rem; font-weight: 800; margin-bottom: 16px;
+  }
+  .stories p { color: var(--muted); max-width: 640px; margin: 0 auto; }
 
   /* Closing CTA */
   .closing {
@@ -147,9 +236,16 @@
     flex-wrap: wrap; gap: 10px;
   }
   footer .wordmark { font-size: 1rem; }
+  footer .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  footer .foot-links a:hover { color: var(--text); }
+  footer .founder { width: 100%; }
 
+  @media (max-width: 960px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 760px) {
     .cards { grid-template-columns: 1fr; }
+    .frames { grid-template-columns: 1fr; max-width: 360px; }
     .hero { padding: 80px 0 70px; }
   }
 </style>
@@ -168,13 +264,13 @@
     <div class="wrap">
       <p class="eyebrow">Same-night plans</p>
       <h1>No strings.<br>Just <em>tonight.</em></h1>
-      <p class="subline">Swipe, match, make plans. 18+ only.</p>
+      <p class="subline">The same-night dating app — swipe, match, and meet at a bar near you tonight.</p>
       <p class="promo">Free for everyone until January 1, 2027</p>
       <div class="cta-row">
-        <a class="btn" href="https://one-night-1.emergent.host">Create account</a>
+        <a class="btn" href="https://one-night-1.emergent.host">Create account — meet tonight</a>
         <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
-      <p class="fineprint">Free until January 1, 2027 &middot; Adults 18 and over &middot; No long profiles</p>
+      <p class="fineprint">Free until January 1, 2027, then $9.99/month. Cancel anytime. &middot; 18+ only &middot; <a href="pricing.html">See pricing</a></p>
     </div>
   </section>
 
@@ -185,6 +281,30 @@
         Your browser doesn't support video. <a href="tonight-ad.mp4">Watch the ad</a>.
       </video>
       <p>Less someday. More Tonight.</p>
+    </div>
+  </section>
+
+  <section class="shots">
+    <div class="wrap">
+      <h2>See the app</h2>
+      <p class="lede">Swipe, match, make a plan — here's how tonight happens.</p>
+      <div class="frames">
+        <div class="frame">
+          <p class="shot-num">01</p>
+          <h3>Swipe feed</h3>
+          <p>Who's out tonight near you. Screenshot coming soon.</p>
+        </div>
+        <div class="frame">
+          <p class="shot-num">02</p>
+          <h3>Match</h3>
+          <p>Chat opens the moment you match. Screenshot coming soon.</p>
+        </div>
+        <div class="frame">
+          <p class="shot-num">03</p>
+          <h3>Make a plan</h3>
+          <p>Pick a bar, set a time, meet at 8. Screenshot coming soon.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -207,7 +327,46 @@
           <h3>Make plans tonight</h3>
           <p>Pick a bar, pick a time, and go. Tonight, not next month.</p>
         </div>
+        <div class="card">
+          <p class="num">04</p>
+          <h3>Meet at 8</h3>
+          <p>Pick a bar, set a time, meet at 8. The plan lands — you just show up.</p>
+        </div>
       </div>
+      <p class="how-line">Pick a bar, pick a time, meet tonight.</p>
+    </div>
+  </section>
+
+  <section class="safety">
+    <div class="wrap">
+      <h2>Play safe, be kind</h2>
+      <p class="lede">Meeting a stranger tonight should feel straightforward, not sketchy. Here's how Tonight keeps it that way.</p>
+      <div class="cards">
+        <div class="card">
+          <p class="num">01</p>
+          <h3>18+ only</h3>
+          <p>Every account confirms its age at sign-up. Under 18, no account — no exceptions.</p>
+        </div>
+        <div class="card">
+          <p class="num">02</p>
+          <h3>Meet in public</h3>
+          <p>A bar or a busy place, not someone's home or a car, for a first meet. Tell a friend where you're going.</p>
+        </div>
+        <div class="card">
+          <p class="num">03</p>
+          <h3>Block and report</h3>
+          <p>Someone crosses a line? Block them in the app and report them. We act on reports — warnings, suspensions, removals.</p>
+        </div>
+      </div>
+      <p class="more"><a href="safety.html">Read the full Safety guidelines &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="stories">
+    <div class="wrap">
+      <h2>First stories</h2>
+      <p class="outcome">The plan lands, you meet at 8, you're back by 10.</p>
+      <p>Tonight is new — the first meetups are happening now, starting in Victoria on November 28. The first stories land here.</p>
     </div>
   </section>
 
@@ -215,9 +374,9 @@
     <div class="wrap">
       <h2>Someone's free tonight.<br>So are you.</h2>
       <div class="cta-row">
-        <a class="btn" href="https://one-night-1.emergent.host">Create account</a>
+        <a class="btn" href="https://one-night-1.emergent.host">Create account — meet tonight</a>
       </div>
-      <p class="fineprint">Free until January 1, 2027 &middot; 18+ only. Play safe, be kind.</p>
+      <p class="fineprint">Free until January 1, 2027, then $9.99/month. Cancel anytime. &middot; 18+ only. Play safe, be kind.</p>
     </div>
   </section>
 </main>
@@ -225,6 +384,16 @@
 <footer>
   <div class="wrap">
     <span class="wordmark">TONIGHT<span>.</span></span>
+    <span class="foot-links">
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="safety.html">Safety</a>
+      <a href="mailto:support@tonightapp.ca">Contact</a>
+      <a href="https://www.instagram.com/timhenrycole">Instagram</a>
+    </span>
+    <span class="founder">Built by Timothy Henry Cole, Duncan, B.C.</span>
     <span>&copy; 2026 Tonight &middot; 18+ only</span>
   </div>
 </footer>
